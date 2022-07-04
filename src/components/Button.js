@@ -6,10 +6,12 @@ class Button extends React.Component {
   // static contextType = LanguageContext;
 
   renderSubmit = (value) => {
+    console.log("🚀 ~ Button ~ value", value);
     return value === "English" ? "Submit" : "Voorleggen";
   };
 
   renderColor = (color) => {
+    console.log("🚀 ~ Button ~ color", color);
     return (
       <button className={`ui button ${color}`}>
         <LanguageContext.Consumer>
